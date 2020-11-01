@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="490.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerR">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-4.0" prefHeight="78.0" prefWidth="497.0">
+         <children>
+            <Text fill="#fffdfd" layoutX="125.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погода" textAlignment="CENTER" wrappingWidth="248.0">
+               <font>
+                  <Font name="Bell MT" size="55.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="123.0" layoutY="68.0" prefHeight="38.0" prefWidth="248.0" promptText="Напишите город" style="-fx-background-color: white; -fx-background-radius: 7px; -fx-border-color: red; -fx-border-radius: 7px;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="getData" layoutX="137.0" layoutY="117.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="216.0" text="Вывести погоду">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Button>
+      <Text fx:id="temp_info" fill="#f8f8f8" layoutX="14.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:" wrappingWidth="191.3757324218749">
+         <font>
+            <Font name="Franklin Gothic Medium" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="#f00000" layoutX="114.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация" textAlignment="CENTER" wrappingWidth="261.7757568359375">
+         <font>
+            <Font name="Calibri" size="34.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_fill" fill="#f0f0f0" layoutX="14.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_max" fill="#fffbfb" layoutX="14.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимум:" wrappingWidth="171.21142578125">
+         <font>
+            <Font name="Franklin Gothic Demi" size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_min" fill="#f5f3f3" layoutX="14.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минимум:" wrappingWidth="134.24920654296875">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_pres" fill="#faf7f7" layoutX="14.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
